@@ -90,6 +90,7 @@ $(".one").removeClass("winner");
 $(".two").removeClass("winner");
 $(".playername-2").html("<h1>PLAYER 2</h1>")
 $(".playername-1").html("<h1>PLAYER 1</h1>")
+$(".dice").css("display","none");
 
 $(".player-2-score").html("<h1>"+player2score+"</h1>")
 $(".player-1-score").html("<h1>"+player1score+"</h1>")

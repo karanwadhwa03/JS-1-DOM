@@ -12,7 +12,7 @@ $(".rolldice").click(function(){
     $(".two").removeClass("active");
     if(active==1){
     $(".one").addClass("active");
-    if(player1score>100)
+    if(player1score>50)
     {   
         
         return;
@@ -20,7 +20,7 @@ $(".rolldice").click(function(){
 }
     else{
     $(".two").addClass("active");
-    if(player2score>100){
+    if(player2score>50){
     
     
     return;
@@ -35,11 +35,11 @@ $(".rolldice").click(function(){
 
 
     if(y!=1){
-        if(player1score<100 && player2score<100){
+        if(player1score<50 && player2score<50){
         if(active==1){
         player1score+=y; 
         $(".player-1-score").html("<h1>"+player1score+"</h1>")
-        if(player1score>100)
+        if(player1score>50)
         {   
             $(".playername-1").html("<h1>WINNER</h1>")
             $(".one").addClass("winner");
@@ -51,7 +51,7 @@ $(".rolldice").click(function(){
          player2score+=y;
          $(".player-2-score").html("<h1>"+player2score+"</h1>")
 
-         if(player2score>100){
+         if(player2score>50){
     
             $(".playername-2").html("<h1>WINNER</h1>")
             $(".two").addClass("winner");
